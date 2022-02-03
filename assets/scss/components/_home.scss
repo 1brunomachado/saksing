@@ -1,0 +1,342 @@
+/*==================== MAIN ====================*/
+.main {
+    overflow-x: hidden;
+}
+
+/*==================== HERO ====================*/
+.hero {
+    position: relative;
+    padding: 7.5rem 0 15rem;
+
+    &__content {
+        &-subtitle {
+            font-size: var(--smaller-font-size);
+            font-weight: var(--font-medium);                
+            letter-spacing: 1px;
+            color: var(--text-color-light);
+        }
+        &-title {
+            margin: 3.2rem 0;
+        }
+        &-line {
+            background: var(--first-color);
+            height: 0.8rem;
+            width: 8rem;
+        }
+    }        
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 7rem 0 8.5rem;
+
+        &-icon {
+            font-size: 2.2rem;
+            color: var(--text-color-light);
+            transition: .3s;
+
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+    }   
+    &__box {         
+        padding: 8rem 5% 0;
+    }
+    &__person {
+        display: none;
+    }
+    &__button {
+        background: var(--first-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 32rem;        
+        width: 100%;        
+        padding: 3.2rem;    
+        transition: .3s;
+
+        &:hover {
+            background: var(--text-color);
+            color: var(--first-color-alt);
+        } 
+        &:hover .hero__button-text {
+            color: var(--first-color-alt);
+        }
+        &:hover .hero__button-icon {
+            animation: bounce .3s ease infinite alternate;
+
+            @keyframes bounce{
+                0% {transform: translateX(0px);}   
+                100% {transform: translateX(-10px);}                                             
+            }
+        }
+        &-text {
+            transition: .3s;
+        }        
+        &-icon {
+            font-size: 3.2rem;
+            align-self: flex-end;            
+        }
+    }
+}
+
+/*==================== ABOUT ====================*/
+.about {   
+    &__tag {
+        display: flex;
+        align-items: center;        
+        padding-top: 1rem;
+        margin-bottom: 4rem;
+
+        &-line {
+            background: var(--text-color-light);
+            width: 100%;
+            height: 0.1rem;
+            margin-right: 1.6rem;
+        }    
+        &-subtitle {
+            max-width: 8.3rem;
+            width: 100%;
+        }
+    }   
+    &__description {
+        margin: 2rem 0 8rem;
+    }
+}
+
+/*==================== COURSES ====================*/
+.courses {   
+    padding: 7.5rem 0 15rem;
+
+    &__container {
+        display: grid;
+        gap: 3.2rem;
+    }    
+    &__card {
+        background: var(--first-color-alt);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 32rem;                
+        padding: 4.8rem;
+        transition: all .3s;
+        color: var(--text-color);
+
+        &:hover .courses__card-icon {
+            animation: bounce .3s ease infinite alternate;
+
+            @keyframes bounce{
+                0% {transform: translateX(0px);}   
+                100% {transform: translateX(-10px);}                                             
+            }
+        }
+        &-active {
+            background: var(--first-color);      
+
+            .courses__card-students {                            
+                color: var(--text-color);                                  
+            }            
+        }    
+        &-icon {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 3rem;                  
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;            
+    
+            &--icon {
+                font-size: 4.8rem;
+            }
+        }
+        &-text {
+            display: grid;
+            gap: 2rem;            
+        }
+    }    
+}
+
+/*==================== TEAM ====================*/
+.team {
+    padding: 0 0 15rem;
+
+    &__text {        
+        margin-bottom: 11rem;        
+
+        &-title,
+        &-description {
+            max-width: 52rem;
+            width: 100%;
+        }
+        &-description {
+            margin-top: 2rem;
+        }
+    }
+
+    &__people {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    &__card {
+        &-img {
+            max-height: 32rem;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-name {            
+            margin: 2rem 0 1rem;            
+        }
+    }
+}
+
+/*==================== NEWS ====================*/
+.news {
+    background: var(--first-color-alt);
+    padding-top: 15rem;    
+
+    &__text {        
+        margin-bottom: 8rem;
+
+        &-title {
+            margin: 4rem 0 2rem;
+
+            &--color {
+                color: var(--first-color);
+            }
+        }
+    }   
+    &__card {      
+        display: block;
+        padding: 3rem 0;     
+
+        &:hover .news__card-title--icon {
+            animation: bounce .3s ease infinite alternate;
+
+            @keyframes bounce{
+                0% {transform: translateX(0px);}   
+                100% {transform: translateX(-10px);}                                             
+            }
+        }
+        &:hover .news__card-title--icon,
+        &:hover .news__card-description {
+            color: var(--text-color);
+        }
+        &:nth-of-type(1) {
+            padding: 0 0 3rem;
+        }
+        &:nth-of-type(2) {
+            border-top: 2px solid var(--text-color-lighten);
+            border-bottom: 2px solid var(--text-color-lighten);;
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 400;
+            margin-bottom: 1.6rem;
+            transition: .3s;
+
+            &--icon {
+                font-size: 3rem;
+                color: var(--first-color);
+                transition: .3s;
+            }
+        }            
+        &-description {
+            transition: .3s;
+        }
+    }            
+}
+
+/*==================== TESTIMONIALS ====================*/
+.testimonials {
+    background: var(--first-color-alt);
+    padding: 15rem 0;
+
+    &__container {
+        position: relative;
+    }    
+    &__quote {
+        position: absolute;
+        font-size: 14rem;
+        color: var(--first-color);
+        top: -80px;
+        left: -10px;
+        z-index: 2;                
+    }    
+    &__swiper {
+        overflow: visible;
+    }  
+    .swiper-slide {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+    }    
+    .swiper-slide-active {
+        opacity: 1;
+        visibility: visible;        
+    }    
+    .swiper-slide-active + .swiper-slide {
+        opacity: 1;
+        visibility: hidden;        
+    }
+    &__slide {
+        &-img {
+            max-height: 32rem;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-text {
+            margin-bottom: 8rem;
+        }        
+        &-person {
+            font-size: clamp(2.4rem,6vw,3.2rem);;
+            font-weight: 300;
+            line-height: 140%;
+            letter-spacing: -1.6px;
+            margin: 2rem 0 4rem;            
+        }  
+    }
+    &__btns {
+        position: relative;
+        bottom: 1px;           
+        height: 70px;
+        width: 140px;     
+        margin: 0 auto;
+
+        &-prev {                
+            left: 0;
+        }    
+        &-next {
+            right: 0;            
+        }
+        &-prev,    
+        &-next {
+            &:hover:after {
+                background: transparent;   
+                border: 1px solid var(--text-color);
+            }
+        }
+        &-prev::after,
+        &-next::after {
+            font-size: var(--normal-font-size);
+            color: var(--text-color);
+            background: var(--first-color);       
+            border: 1px solid var(--first-color);
+            padding: 2.6rem 3rem; 
+            border-radius: 50%;
+            transition: .3s;            
+        }
+        .swiper-button-disabled::after {
+            background: transparent;   
+            border: 1px solid var(--text-color);
+        }  
+    }
+}

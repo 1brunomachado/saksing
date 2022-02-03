@@ -1,0 +1,13 @@
+.header {    
+    padding: 4rem 0;
+
+    .nav__logo {
+        font-size: var(--small-font-size);
+        font-weight: var(--font-semi-bold);
+        letter-spacing: 1px;
+        color: var(--text-color);        
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}

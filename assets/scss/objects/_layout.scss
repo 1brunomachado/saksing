@@ -1,0 +1,45 @@
+.description {
+    font-family: 'Poppins', sans-serif;
+    line-height: 155%;
+    letter-spacing: 0.5px;
+    color: var(--text-color-lighten);
+}
+
+.subtitle {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.small-text {
+    font-size: var(--small-font-size);
+    letter-spacing: 0;
+    color: var(--text-color-light);    
+}
+
+.container {
+    max-width: calc(1140px + 10%);
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    &__item {
+        display: grid;
+        gap: 1.4rem;
+    }
+
+    &-title {
+        font-size: clamp(3.2rem,6vw,4rem);        
+        line-height: 100%;
+    }
+
+    &-text {
+        font-size: 1.6rem;
+        line-height: 165%;
+        color: var(--text-color-light);
+    }
+}  

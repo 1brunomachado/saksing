@@ -1,0 +1,10 @@
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+    width: .6rem;
+    background: hsl(var(--hue), 4%, 53%);
+
+    &-thumb{
+        background: hsl(var(--hue), 4%, 29%);
+        border-radius: .5rem;
+    }
+}

@@ -1,0 +1,75 @@
+// Reset
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body,
+button,
+input,
+textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{           
+    background-image: linear-gradient( 90deg, #222222 1px, transparent 1px);
+    background-size: 28.2rem;
+    background-position: center;
+    background-color: var(--body-color);
+    color: var(--text-color);        
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+h1 ,h2, h3{
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);  
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    line-height: 105%;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    line-height: 130%;
+}
+
+h4 {
+    font-size: var(--h4-font-size);    
+    font-weight: var(--font-medium);  
+    letter-spacing: -0.7px;
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
