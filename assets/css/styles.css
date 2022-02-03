@@ -555,10 +555,10 @@ footer .footer__links-item:hover {
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background: hsl(var(--hue), 4%, 53%);
+  background: var(--body-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--hue), 4%, 29%);
+  background: var(--first-color-alt);
   border-radius: 0.5rem;
 }
 
